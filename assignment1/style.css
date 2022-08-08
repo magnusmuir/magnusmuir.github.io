@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Kahlil;
+    src: url(font/Kahlil.ttf);
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url(font/RobotoSlab-Regular.ttf);
+}
+
+body {
+    background-color: #1F1F1F;
+    background-image: url('img/fatimaalqadiri.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+h1 {
+    font-family: Kahlil;
+    font-size: 6em;
+    background: linear-gradient(#F9EE5A 0%, #F7A325 50%, #DE490B 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.7;
+    text-align: right;
+    padding-right: 10%;
+}
+
+h2 {
+    font-family: RobotoSlab;
+    font-size: 5em;
+    text-align: right;
+    color: #CFCFCF;
+    padding-right: 10%;
+    margin-bottom: 40vh;
+    background: linear-gradient(#F9EE5A 0%, #F7A325 50%, #DE490B 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.7;
+}
+
+header {
+    height: 50vh;
+}
+
+.harddrive {
+    width: 20vw;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vh;
+}
+
+.homepage {
+    width: 60vw;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vh;
+  padding: 2%;
+}
+
+.panel {
+    width: 40vw;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vh;
+  padding: 2%;
+}
+
+.folders {
+    width: 60vw;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vh;
+  padding: 2%;
+}
+
+div {
+    background-color: #3F3F3F;
+    font-family: RobotoSlab;
+    font-size: 1.5em;
+    line-height: 2em;
+    color: #CFCFCF;
+    margin: 2%;
+    padding: 2%;
+    max-width: 60%;
+    margin-left: 10%;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+
+}
