@@ -1,0 +1,131 @@
+/* z-index order */
+
+* {
+    margin: 0;
+
+}
+
+/* I used neon colours for my composition because the breif reminded me of neon signage and I felt this theme would accuentuate the layout  */
+
+:root{
+    --colh: radial-gradient(circle, rgba(255,107,0,1) 0%, rgba(180,7,147,1) 63%, rgba(89,15,183,1) 100%);    
+    --col1: linear-gradient(35deg, rgba(102,153,255,1) 0%, rgba(180,7,147,1) 50%, rgba(255,107,0,1) 100%);
+    --col2: linear-gradient(0deg, rgba(36,5,242,1) 0%, rgba(180,7,147,1) 50%, rgba(255,107,0,1) 100%); 
+    --col3: linear-gradient(325deg, rgba(102,153,255,1) 0%, rgba(180,7,147,1) 50%, rgba(255,107,0,1) 100%);
+    --col4: linear-gradient(315deg, rgba(24,17,102,1) 0%, rgba(102,153,255,1) 100%);
+    --col5: linear-gradient(45deg, rgba(24,17,102,1) 0%, rgba(102,153,255,1) 100%);
+    --col6: linear-gradient(0deg, rgba(19,226,218,1) 0%, rgba(36,5,242,1) 100%);
+    --col7: linear-gradient(0deg, rgba(24,17,102,1) 0%, rgba(19,226,218,1) 100%);
+    --col8: linear-gradient(180deg, rgba(13,125,163,1) 0%, rgba(13,86,115,1) 32%, rgba(54,47,47,1) 56%, rgba(49,24,26,1) 80%, rgba(8,8,8,1) 100%);
+    }
+
+
+/* I created a very gradual gradient for the background that would allow the composition to float over the top */
+
+body {
+    background: no-repeat center center fixed
+                linear-gradient(0deg, 
+                rgba(0,64,108,1) 0%, 
+                rgba(0,58,97,1) 20%, 
+                rgba(0,51,86,1) 30%, 
+                rgba(0,46,78,1) 40%, 
+                rgba(0,41,69,1) 50%, 
+                rgba(0,37,62,1) 60%, 
+                rgba(0,33,55,1) 70%, 
+                rgba(0,26,44,1) 80%, 
+                rgba(0,21,35,1) 90%, 
+                rgba(0,17,28,1) 100%);
+}
+
+
+.grid-container {
+    margin: auto;
+    padding: 5%;
+    width: 71vh;
+    height: 100vh;
+    border: 1px solid #00000000;
+    display: grid;
+    grid-template-columns: 80px 200px 75px 115px 15px 230px 15px 300px 50px 130px 65px;
+    grid-template-rows: 600px 150px 200px 30px 20px 275px 15px 290px 130px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+  
+.box-border {
+    border: 2px solid #00fb36;
+    border-radius: 15px;
+}
+
+.box-shadow {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+  
+.box1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background: var(--col1);
+}
+
+.box2 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background: var(--col2)
+}
+
+.box3 {
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background: var(--col3)
+}
+
+.box4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    background: var(--col4);
+}
+
+.box5 {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    background: var(--col5)
+}
+
+.box6 {
+    grid-column-start: 3;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background: var(--col6)
+}
+
+.box7 {
+    grid-column-start: 3;
+    grid-column-end: 10;
+    grid-row-start: 8;
+    grid-row-end: 11;
+    background: var(--col7);
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: var(--colh);
+}
