@@ -1,0 +1,117 @@
+@font-face {
+    font-family: VECTORIZ;
+    src: url(font/VECTORIZ.TTF);
+}
+
+body {
+    background-color: #FFFFFF;
+    
+}
+
+.logoContainer {
+    display: flex;
+    width: 100%;
+    padding-bottom: 2%;
+    justify-content: right;
+    border-bottom: 5px solid #c5c5c5;
+} 
+
+.logo {
+    width: 300px;
+    height:auto;
+}
+
+.container {
+    display: flex;
+    height: 85vh;
+    gap: 2%;
+}
+
+.margin {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.racer-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle at 1px 1px, #c5c5c5 1px, transparent 0);
+    background-size: 20px 20px;
+   
+}
+
+@keyframes racefloat {
+    0% {transform: translateY(0%);}
+    50% {transform: translateY(5%);}
+    100% {transform: translateY(0%);}
+    
+}
+
+.racer {
+    width: 800px;
+    object-fit: contain;
+    animation: racefloat 2s ease-in-out infinite;
+}
+
+.player {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+}
+
+.progressbar {
+    margin-top: 8px;
+    background-color: #FCC624;
+    height: 20px;
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    left: 0%;
+    background-color: #16AFD0;
+    top: 0%;
+    height: 100%;
+    width: 0px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    flex: 1;
+    width: 100%;
+    text-align: left;
+    font-size: 2em;
+    font-family: VECTORIZ;
+    color: #FCC624;
+    background: #16AFD0;
+    border: none;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 23%, 95% 23%, 90% 0);
+    display: block;
+    margin: 1%;
+    padding: 1%;
+    
+}
+
+button:hover {
+    background: #0095BB;
+    transition: ease-in-out 0.2s;
+}
+
+button:focus {
+    background: #0082a3;
+}
+
+.mediaButtons {
+    display: flex;
+    justify-content: space-between;
+}
