@@ -1,34 +1,34 @@
 var songList = [{
     title:"01. Cariodrome",
-    filePath:"music/01Cairodrome.m4a"
+    filePath:"./music/01Cairodrome.m4a"
 },
 {
     title:"02. Cardinal Dancer",
-    filePath:"music/02CardinalDancer.m4a"
+    filePath:"./music/02CardinalDancer.m4a"
 },
 {
     title:"03. Cold Comfort",
-    filePath:"music/03ColdComfort.m4a"
+    filePath:"./music/03ColdComfort.m4a"
 },
 {
     title:"04. DOH-T",
-    filePath:"music/04DOH-T.m4a"
+    filePath:"./music/04DOH-T.m4a"
 },
 {
     title:"05. Messij",
-    filePath:"music/05Messij.m4a"
+    filePath:"./music/05Messij.m4a"
 },
 {
     title:"06. Operatique",
-    filePath:"music/06Operatique.m4a"
+    filePath:"./music/06Operatique.m4a"
 },
 {
     title:"07. Tentative",
-    filePath:"music/07Tentative.m4a"
+    filePath:"./music/07Tentative.m4a"
 },
 {
     title:"08. Trancevaal",
-    filePath:"music/08Trancevaal.m4a"
+    filePath:"./music/08Trancevaal.m4a"
 }]
 
 // I made a list of objects of the songs I will using in my tracklist
